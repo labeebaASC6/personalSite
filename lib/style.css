@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Jaldi|Telex&display=swap');
+/* font-family: 'Telex', sans-serif;
+font-family: 'Fauna One', serif;
+font-family: 'Jaldi', sans-serif; */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
