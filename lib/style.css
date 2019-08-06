@@ -12,11 +12,10 @@ body {
 .greeting_banner {
     width: 100%;
     height: 100vh;
+    text-align: center;
     background: linear-gradient(#59BDFF, #3F73E7);
     color: aliceblue;
-    box-shadow: 0 3px 1px rgba(0,0,0,0.3);
-    text-align: center;
-
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
 }
 .greeting_banner .box_containing_banner_content{
     width: 100%;
@@ -46,7 +45,8 @@ body {
 .greeting_banner a{
     display: inline-block;
     width: 50px;
-    font-family: 'Fauna One', serif;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 40px;
     cursor: pointer;
     text-decoration: none;
     color: aliceblue;
@@ -56,6 +56,14 @@ body {
     color: #7AFCFF;
 }
 
+.card-heading {
+    display: inline-block;
+    font-family: 'Telex', sans-serif;
+    border: 0;
+    border-bottom: 1px;
+    border-color: inherit;
+    border-style: solid;
+}
 .card-1 {
     text-align: center;
     color: aliceblue;
@@ -64,8 +72,12 @@ body {
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    font-family: 'Jaldi', sans-serif;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    font-family: 'Fauna One', serif;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    line-height: 250%;
+}
+.card-1 .card-heading {
+    color: #3F73E7;
 }
 .card-1 p {
     text-align: left;
@@ -92,11 +104,13 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
     font-family: 'Jaldi', sans-serif;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
 }
 .card-2 .card-list {
     display: flex;
     justify-content: space-around;
+    margin: 15%;
+    margin-top: 10px;
 }
 .card-2 h3 {
     text-align: center;
@@ -150,11 +164,60 @@ body {
     border-radius: inherit;
 }
 
-
+.card-3 {
+    background: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+.card-3 .project_card-container {
+    display: flex;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.card-3 .project_card {
+    background: #8A81E5;
+    width: 50%;
+    height: 90px;
+    margin: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/* #mash {
+    background-image: url("./../../assets/mashe.png");
+}
+#battleship {
+    background-image: url("./assets/battleship.png");
+}
+#space_invader {
+    background-image: url("./assets/spaceInvaders.png");
+} */
+.card-3 .project_card:hover {
+    background:  rgb(157, 224, 255);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+.card-3 .project_card h5 {
+    display: block;
+    font-family: 'Jaldi', sans-serif;
+    color: aliceblue;
+    font-size: 20px;
+}
 
 
 
 /* media stuff */
-@media (max-width: 425) {
-
+@media (max-width: 600px) {
+    .box_containing_banner_content img{
+        width: 40%;
+    }
+    .card-2 .card-list {
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .card-2 .card-list span{
+        margin-bottom: 10%;
+    }
+    .card-2 .stat-container{
+        margin-top: 3%;
+    }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "icon" type = "image/png" href = "./assets/favicon.ico">
     <link rel="stylesheet" href="./lib/animation.css">
     <link rel="stylesheet" href="./lib/style.css">
     <script src="./lib/script.js"></script>
@@ -12,17 +13,20 @@
 <body>
     <div class = "greeting_banner">
         <div class = "box_containing_banner_content">
-            <img src="./assets/trtrrt.png" alt="My Portrait"/>
+            <img src="./assets/trtrrst.png" alt="My Portrait"/>
             <h1>Hi! I'm Labeeb!</h1>
         </div>
 
         <div class = "scrolldown">
-            <a href = "#About">Start</a>
+            <a href = "#About">↓</a>
         </div>
     </div>
 
     <div class = "card-1" id = "About">
-        <p><span>As a student,</span> I am currently attending high school and also enrolled in a career-oriented course in software engineering with my normal schedule. I have a passionate interest in computer science as I enjoy solving problems by applying software. I joined my school tech team and managed school systems by teamwork. I have also helped my school create a revamp to their website too! You can <a href="" target="_blank">check it out here</a> and please give feedback so that we can improve it. It will be greatly appreciated!</p>
+        <div class = "card-heading">
+            <h1>About Me</h1>
+        </div>
+        <p><span>As a student,</span> I am currently attending high school and also enrolled in a career-oriented course in software engineering with my normal schedule. I have a passionate interest in computer science as I enjoy solving problems by applying software. I joined my school tech team and managed school systems by teamwork. I have also helped my school create a revamp to their website too!</p>
     </div>
 
     <div class = "card-2" id = "Skills">
@@ -52,21 +56,23 @@
     </div>
 
     <div class = "card-3" id = "Projects">
-        <div class = "project_card">
-            <h5>MASH</h5>
+        <div class = "project_card-container">
+            <div class = "project_card" id = "mash">
+                <h5>MASH</h5>
+            </div>
+            <div class = "project_card" id = "battleship">
+                <h5>Battleship</h5>
+            </div>
+            <div class = "project_card" id = "space_invader">
+                <h5>Space Invader</h5>
+            </div>
+            <div class = "project_card" id = "stellargameswebsite">
+                <h5>Super Stellar Games Website</h5>
+            </div>
+            <div class = "project_card" id = "randomPerson">
+                <h5>RandomPerson</h5>
+            </div>
         </div>
-        <div class = "project_card">
-            <h5>Space Invader</h5>
-        </div>
-        <div class = "project_card">
-            <h5>Super Stellar Games Website</h5>
-        </div>
-        <div class = "project_card">
-            <h5>MarioPaint MVP</h5>
-        </div>
-        <div class = "project_card">
-            <h5>Super Stellar Games Website</h5>
-        </div>        
     </div>
 
     <footer>
